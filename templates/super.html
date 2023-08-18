@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% set active_page = "cipher" %}
+{% block title %}Cryptography Web{% endblock %}
+
+{% block scripts %}
+  <script src="{{ url_for("static", filename="js/super.js") }}"></script>
+{% endblock %}
+
+{% block css %}
+  <link rel="stylesheet" href="{{ url_for("static", filename="css/ciphers.css") }}">
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid mt-3">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="d-flex position-relative flex-column viewer-box box">
+          <div class="box-header">
+            <h3 class="box-title-left box-title">
+              Plaintext
+            </h3>
+          </div>
+          <div class="box-content">
+            <textarea id="plaintext-area" spellcheck="false" class="viewer-box-textarea"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="box mid-box d-flex position-relative flex-column">
+          <div class="box-header">
+            <ul class="mid-box-head-actions d-flex flex-row p-0">
+              <li><a href="#" class="mid-box-action mid-box-action-active action-encode">Encode</a></li>
+              <li><a href="#" class="mid-box-action action-decode">Decode</a></li>
+            </ul>
+            <h3 class="box-title-mid box-title">
+              Super Cipher
+            </h3>
+          </div>
+          <div class="box-settings">
+            <div class="setting-form d-flex flex-row flex-wrap">
+                <div class="setting-form-field">
+                    <label for="ui1" class="setting-form-field-label" >Key</label>
+                    <div class="d-flex position-relative flex-row w-100">
+                      <button class="btn btn-outline-dark flex-grow-1 step-down-btn1">
+                        <i class="fas fa-minus"></i>
+                      </button>
+                      <div class="d-block position-relative flex-grow-1">
+                        <input id="ui1" type="number" class="setting-form-field-number-input" name="number-setting-caesar" value="1">
+                      </div>
+                      <button class="btn btn-outline-dark flex-grow-1 step-up-btn1">
+                        <i class="fas fa-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="setting-form-field">
+                    <label for="ui2" class="setting-form-field-label" >Key (Must be more than 1)</label>
+                    <div class="d-flex position-relative flex-row w-100">
+                      <button class="btn btn-outline-dark flex-grow-1 step-down-btn2">
+                        <i class="fas fa-minus"></i>
+                      </button>
+                      <div class="d-block position-relative flex-grow-1">
+                        <input id="ui2" type="number" class="setting-form-field-number-input" name="number-setting-rail" value="2">
+                      </div>
+                      <button class="btn btn-outline-dark flex-grow-1 step-up-btn2">
+                        <i class="fas fa-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="setting-form-field">
+                    <label for="ui" class="setting-form-field-label">Key (Text)</label>
+                    <div class="d-flex position-relative flex-row w-100">
+                      <div class="d-block position-relative flex-grow-1">
+                        <input id="ui" type="text" class="setting-form-field-text-input" name="text-key" spellcheck="false" placeholder="Input Text Here">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  <div class="d-flex mt-3 mb-3">
+                    <button type="button" class="btn btn-dark process-btn">Encrypt</button>
+                  </div>
+                </div>
+          </div>
+      <div class="col-md-4">
+        <div class="d-flex position-relative flex-column viewer-box box">
+          <div class="box-header">
+            <h3 class="box-title-right box-title">
+              Ciphertext
+            </h3>
+          </div>
+          <div class="box-content">
+            <textarea id="ciphertext-area" spellcheck="false" class="viewer-box-textarea"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+{% endblock %}

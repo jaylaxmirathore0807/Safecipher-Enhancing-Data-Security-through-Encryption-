@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% set active_page = "cipher" %}
+{% block title %}Cryptography Web{% endblock %}
+
+{% block scripts %}
+  <script src="{{ url_for("static", filename="js/caesar.js") }}"></script>
+{% endblock %}
+
+{% block css %}
+  <link rel="stylesheet" href="{{ url_for("static", filename="css/ciphers.css") }}">
+{% endblock %}
+
+
+{% block content %}
+<style>
+  h1 {text-align: center;}
+  p {text-align: center;}
+  div {text-align: center;}
+  </style>
+         <H1> Super Secure Security System </H1> 
+
+            <img src="https://www.adaptivesecuritytech.com/wp-content/uploads/2021/02/secure-communication-1-638.jpg" height="500" width="1400">
+            <marquee>  <H3> Developed by : Vatshayan </H3> </marquee> 
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

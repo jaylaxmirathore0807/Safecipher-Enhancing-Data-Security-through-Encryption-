@@ -1,0 +1,93 @@
+.navbar {
+  background-color: #00020c;
+}
+.navbar .navbar-brand {
+  color: #ffff;
+}
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+  color: #ffff;
+}
+.navbar .navbar-text {
+  color: #9b0f0f;
+}
+.navbar .navbar-text a {
+  color: rgb(114, 18, 18);
+}
+.navbar .navbar-text a:hover,
+.navbar .navbar-text a:focus {
+  color: #c61f1f;
+}
+.navbar .navbar-nav .nav-link {
+  color: #ffffff;
+  border-radius: .25rem;
+  margin: 0 0.25em;
+}
+.navbar .navbar-nav .nav-link:not(.disabled):hover,
+.navbar .navbar-nav .nav-link:not(.disabled):focus {
+  color: #ffff;
+}
+.navbar .navbar-nav .nav-item.active .nav-link,
+.navbar .navbar-nav .nav-item.active .nav-link:hover,
+.navbar .navbar-nav .nav-item.active .nav-link:focus,
+.navbar .navbar-nav .nav-item.show .nav-link,
+.navbar .navbar-nav .nav-item.show .nav-link:hover,
+.navbar .navbar-nav .nav-item.show .nav-link:focus {
+  color: #ffff;
+  background-color: gray;
+}
+.navbar .navbar-toggle {
+  border-color: #424874;
+}
+.navbar .navbar-toggle:hover,
+.navbar .navbar-toggle:focus {
+  background-color: #424874;
+}
+.navbar .navbar-toggle .navbar-toggler-icon {
+  color: #ffff;
+}
+.navbar .navbar-collapse,
+.navbar .navbar-form {
+  border-color: #ffff;
+}
+.navbar .navbar-link {
+  color: #ffff;
+}
+.navbar .navbar-link:hover {
+  color: #ffff;
+}
+
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
+  color: #ecf0f1;
+}
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+  color: #ffff;
+}
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
+  color: #ffff;
+  background-color: #ffff;
+}
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu a::after {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 6px;
+  top: .8em;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: .1rem;
+  margin-right: .1rem;
+}
+.dropdown-submenu:hover .drop-submenu {
+  display: block;
+}
+.box-title-mid {
+  margin-top: 24px;
+}
